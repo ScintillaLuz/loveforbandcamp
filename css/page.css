@@ -1,0 +1,42 @@
+@import url("//fonts.googleapis.com/css?family=Open\+Sans:400,300,600,700,800");
+@import url("//fonts.googleapis.com/css?family=Merriweather:400,400italic,300italic,300,700,700italic");
+@import url("//fonts.googleapis.com/css?family=Vollkorn:400italic,700italic,400,700");
+@import url("//fonts.googleapis.com/css?family=Inconsolata:400,700");
+@import url("//fonts.googleapis.com/css?family=Kavoon");
+body {
+  color: #444;
+  font-family: 'Merriweather', Georgia, serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.intro {
+  background-color: #f4f1ea;
+}
+.intro .title {
+  font-family: 'Kavoon';
+  font-weight: normal;
+  font-size: 4em;
+}
+.graphic-work .img-container img {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+}
+.playlist {
+  background-color: #303030;
+}
+.playlist .iframe-container {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 37%;
+  padding-top: 316px;
+}
+.playlist .iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
