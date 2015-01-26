@@ -1,8 +1,35 @@
 @import url("//fonts.googleapis.com/css?family=Open\+Sans:400,300,600,700,800");
-@import url("//fonts.googleapis.com/css?family=Merriweather:400,400italic,300italic,300,700,700italic");
-@import url("//fonts.googleapis.com/css?family=Vollkorn:400italic,700italic,400,700");
+@import url("//fonts.googleapis.com/css?family=Merriweather:400,300italic,300,400italic,700,700italic,900,900italic");
 @import url("//fonts.googleapis.com/css?family=Inconsolata:400,700");
-@import url("//fonts.googleapis.com/css?family=Kavoon");
+@font-face {
+  font-family: "House Slant";
+  src: url("HouseSlant.eot");
+  src: url("HouseSlant.eot?#iefix") format("embedded-opentype"), url("HouseSlant.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+.menu-button {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: none;
+  padding: 0.5em 0.8em;
+  border-radius: 4px;
+  color: #7c7c7c;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.menu-button:hover {
+  color: #e96985;
+  background-color: #fbfaf8;
+  border-bottom: none;
+}
+.menu-button:active {
+  box-shadow: inset 0px 0px 3px 2px rgba(68,68,68,0.2);
+}
 body {
   color: #444;
   font-family: 'Merriweather', Georgia, serif;
@@ -10,18 +37,111 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+body a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #e96985;
+  border-bottom: 1px dotted #e96985;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+body a:hover {
+  color: #2193b4;
+  border-bottom: 1px dotted #2193b4;
+}
+body strong {
+  font-weight: 700;
+}
+.presentation .section-title,
+.cover-letter .section-title,
+.hire-me .section-title,
+.graphic-work .section-title {
+  font-weight: 800;
+}
+.presentation,
+.cover-letter {
+  font-size: 1.4em;
+}
+.hire-me .section-title,
+.graphic-work .section-title {
+  font-size: 2em;
+  text-align: center;
+}
+.presentation .description,
+.cover-letter .description {
+  font-size: 1em;
+  line-height: 1.8em;
+}
 .intro {
-  background-color: #f4f1ea;
+  background-color: #f8f6f3;
 }
 .intro .title {
-  font-family: 'Kavoon';
+  font-family: 'House Slant', script;
   font-weight: normal;
-  font-size: 4em;
+  font-size: 6.5em;
+  line-height: 1em;
+}
+.intro .title .highlight {
+  color: #e96985;
+}
+.menu-page {
+  background-color: #efeae3;
+}
+.menu-page .menu-list {
+  padding: 1em 0;
+}
+.menu-page .menu-list li {
+  padding-right: 1em;
+}
+.presentation {
+  padding-top: 1rem;
+}
+.hire-me .subtitle {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e3e3e3;
+  padding-bottom: 1.2em;
+}
+.hire-me .hire-me-description {
+  font-size: 0.9em;
+  line-height: 1.8em;
+}
+.hire-me .hire-me-description li {
+  padding-bottom: 0.4em;
+}
+.graphic-work {
+  background-color: #f9f7f5;
+}
+.graphic-work .subtitle {
+  margin: 2em 0 0 0;
+  font-size: 1.3em;
+  font-weight: 800;
+}
+.graphic-work .project-description {
+  margin: 0.6em 0 0 0;
+  padding-right: 0.2em;
+  font-size: 0.9em;
+  line-height: 1.8em;
 }
 .graphic-work .img-container img {
   margin: 0 auto;
   display: block;
   max-width: 100%;
+}
+.graphic-work .skills {
+  margin: 1.2em 0 0 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9em;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+.graphic-work .skills .skills-label {
+  color: #989898;
+}
+.graphic-work .skills .menu-list {
+  display: inline;
 }
 .playlist {
   background-color: #303030;

@@ -5,20 +5,69 @@
 
 
 // Fonts
-
 @import url("//fonts.googleapis.com/css?family=Open\+Sans:400,300,600,700,800")
-@import url("//fonts.googleapis.com/css?family=Merriweather:400,400italic,300italic,300,700,700italic")
-@import url("//fonts.googleapis.com/css?family=Vollkorn:400italic,700italic,400,700")
+@import url("//fonts.googleapis.com/css?family=Merriweather:400,300italic,300,400italic,700,700italic,900,900italic")
+// @import url("//fonts.googleapis.com/css?family=Vollkorn:400italic,700italic,400,700")
 @import url("//fonts.googleapis.com/css?family=Inconsolata:400,700")
-@import url("//fonts.googleapis.com/css?family=Kavoon")
+
+@font-face {
+    font-family: "House Slant";
+    src: url('HouseSlant.eot');
+    src: url("HouseSlant.eot?#iefix") format("embedded-opentype"),
+         url("HouseSlant.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+}
 
 // Colors
-
-$color_bg_intro = #F4F1EA
-$color_text = #444444
+$color_bg_intro = #f8f6f3
 $color_bg_playlist = #303030
 
+$color_text = #444444
+$color_links = #E96985
+$color_links_hover = #2193B4
 
+$color_grey_light = lighten($color_text, 85%)
+
+$color_menu_buttons = lighten($color_text, 30%)
+
+// Mixins
+transition()
+  -webkit-transition arguments
+  transition arguments
+
+// Rounded Corners
+$rounded_corners = 4px
+$rounded_corners_small = 2px
+
+// Menu Buttons
+.menu-button
+  font-family 'Open Sans'
+  font-weight 700
+  font-size 0.75em
+  text-transform uppercase
+  letter-spacing 1px
+
+  border-bottom none
+  padding 0.5em 0.8em
+  border-radius $rounded_corners
+
+  color $color_menu_buttons
+
+  transition(all 0.4s ease)
+
+  &:hover
+    color $color_links
+    background-color lighten($color_bg_intro, 40%)
+
+    border-bottom none
+
+  &:active
+    box-shadow inset 0px 0px 3px 2px rgba($color_text, 0.2)
+
+
+// General Styles
 body
     color $color_text
 
@@ -27,21 +76,129 @@ body
     -webkit-font-smoothing antialiased
     -moz-osx-font-smoothing grayscale
 
+    a
+      font-weight 700
+      text-decoration none
+
+      color $color_links
+      border-bottom 1px dotted @color
+
+      transition(all 0.4s ease)
+
+      &:hover
+        color $color_links_hover
+        border-bottom 1px dotted @color
+
+    strong
+      font-weight 700
+
+// Basic Typography Rules
+.presentation
+.cover-letter
+.hire-me
+.graphic-work
+  .section-title
+    font-weight 800
+
+.presentation
+.cover-letter
+    font-size 1.4em
+
+.hire-me
+.graphic-work
+  .section-title
+    font-size 2em
+    text-align center
+
+.presentation
+.cover-letter
+  .description
+    font-size 1em
+    line-height 1.8em
+
+// Banner Top
 .intro
   background-color $color_bg_intro
 
   .title
-    font-family 'Kavoon'
+    font-family 'House Slant', script
     font-weight normal
-    font-size 4em
+    font-size 6.5em
+    line-height 1em
 
+    .highlight
+      color $color_links
+
+// Menu Page
+.menu-page
+  background-color darken($color_bg_intro, 5%)
+
+  .menu-list
+    padding 1em 0
+
+    li
+      padding-right 1em
+
+// About Myself
+.presentation
+  padding-top 1rem
+
+.hire-me
+  .subtitle
+    font-family 'Open Sans'
+    font-weight 600
+    text-align center
+    text-transform uppercase
+
+    border-bottom 1px solid $color_grey_light
+    padding-bottom 1.2em
+
+  .hire-me-description
+    font-size 0.9em
+    line-height 1.8em
+
+    li
+      padding-bottom 0.4em
+
+// Selected Works
 .graphic-work
+  background-color lighten($color_bg_intro, 15%)
+
+  .subtitle
+    margin 2em 0 0 0
+
+    font-size 1.3em
+    font-weight 800
+
+  .project-description
+    margin 0.6em 0 0 0
+    padding-right 0.2em
+
+    font-size 0.9em
+    line-height 1.8em
+
   .img-container
 
     img
       margin 0 auto
       display block
       max-width 100%
+
+  .skills
+    margin 1.2em 0 0 0
+
+    font-family 'Open Sans', sans-serif
+    font-size 0.9em
+    font-weight 600
+    line-height 1.4em
+
+    .skills-label
+      color lighten($color_text, 45%)
+
+    .menu-list
+      display inline
+
+
 
 .playlist
   background-color $color_bg_playlist
