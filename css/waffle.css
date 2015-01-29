@@ -3,7 +3,7 @@ body {
 }
 @media screen and (min-width: 1800px) {
   body.wider .row {
-    max-width: 1600px;
+    max-width: 1180px;
   }
 }
 .row,
@@ -13,7 +13,7 @@ body {
   box-sizing: border-box;
 }
 .row {
-  max-width: 1180px;
+  max-width: 1024px;
   margin: 0 auto;
   font-size: 0;
 }
@@ -22,7 +22,7 @@ body {
 }
 .unit {
   display: inline-block;
-  border: 10px solid transparent;
+  border: 20px solid transparent;
   vertical-align: top;
   font-size: 16px;
 }
