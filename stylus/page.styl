@@ -42,6 +42,31 @@ transition()
 $rounded_corners = 4px
 $rounded_corners_small = 2px
 
+// General Styles
+body
+    color $color_text
+
+    font-family 'Merriweather', Georgia, serif
+    text-rendering optimizeLegibility
+    -webkit-font-smoothing antialiased
+    -moz-osx-font-smoothing grayscale
+
+    a
+      font-weight 700
+      text-decoration none
+
+      color $color_links
+      border-bottom 1px solid @color
+
+      transition(all 0.4s ease)
+
+      &:hover
+        color $color_links_hover
+        border-bottom 1px solid @color
+
+    strong
+      font-weight 700
+
 // Menu Buttons
 .menu-button
   font-family 'Open Sans'
@@ -108,56 +133,34 @@ $rounded_corners_small = 2px
     @extend .button
     background-color lighten($color_text, 45%)
 
+// Typography Shared Rules
 
-// General Styles
-body
-    color $color_text
-
-    font-family 'Merriweather', Georgia, serif
-    text-rendering optimizeLegibility
-    -webkit-font-smoothing antialiased
-    -moz-osx-font-smoothing grayscale
-
-    a
-      font-weight 700
-      text-decoration none
-
-      color $color_links
-      border-bottom 1px dotted @color
-
-      transition(all 0.4s ease)
-
-      &:hover
-        color $color_links_hover
-        border-bottom 1px dotted @color
-
-    strong
-      font-weight 700
-
-
-// Basic Typography Rules
+// Section title, consistent across the page
 .presentation
 .cover-letter
 .hire-me
-.graphic-work
+.graphic-projects
+.curriculum
+.playlist
   .section-title
     font-weight 800
 
-.presentation
 .cover-letter
-    font-size 1.4em
-
-.hire-me
-.graphic-work
+.graphic-projects
+.curriculum
+.playlist
   .section-title
     font-size 2em
     text-align center
 
-.presentation
-.cover-letter
-  .description
-    font-size 1em
-    line-height 1.8em
+.cover-letter-subtitle
+.experience-subtitle
+.skills
+.experience-info
+  font-family 'Open Sans'
+  font-weight 600
+  letter-spacing 1px
+  text-transform uppercase
 
 // Banner Top
 .intro
@@ -180,37 +183,41 @@ body
     padding 1em 0
 
     li
-      padding-right 1em
+      padding-right 0.6em
 
       .contacts
         color $color_links
 
-// About Myself
+// About myself and why I love Bandcamp
 .presentation
-  padding-top 1rem
 
-.hire-me
-  .subtitle
-    font-family 'Open Sans'
-    font-weight 600
+  .presentation-description
+    font-size 1em
+    line-height 1.8em
+
+.cover-letter
+
+  // .section-title
+  //   margin 3em 0 0 0
+
+  .cover-letter-subtitle
     text-align center
-    text-transform uppercase
 
     border-bottom 1px solid $color_grey_light
     padding-bottom 1.2em
 
-  .hire-me-description
+  .cover-letter-description
     font-size 0.9em
     line-height 1.8em
 
     li
       padding-bottom 0.4em
 
-// Selected Works
-.graphic-work
+// My Best Works
+.graphic-projects
   background-color lighten($color_bg_intro, 15%)
 
-  .subtitle
+  .project-subtitle
     margin 2em 0 0 0
 
     font-size 1.3em
@@ -233,11 +240,8 @@ body
   .skills
     margin 1.2em 0 0 0
 
-    font-family 'Open Sans', sans-serif
-    font-size 0.8em
-    font-weight 600
-    line-height 1.4em
-    text-transform uppercase
+    font-size 0.7em
+    line-height 1.6em
 
     .skills-label
       color $color_grey
@@ -255,6 +259,22 @@ body
         &:last-of-type::after
           content ''
 
+// Curriculum
+.curriculum
+  font-size 1em
+
+  .experience-info
+    font-size 0.75em
+
+  .experience-subtitle
+    margin 0
+    font-size 0.75em
+
+  .experience-description
+    font-size 0.9em
+    line-height 1.8em
+
+// Playlist
 .playlist
   background-color $color_bg_playlist
 

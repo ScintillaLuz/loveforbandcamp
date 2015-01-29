@@ -9,6 +9,28 @@
   font-weight: 400;
   font-stretch: normal;
 }
+body {
+  color: #444;
+  font-family: 'Merriweather', Georgia, serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #e96985;
+  border-bottom: 1px solid #e96985;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+body a:hover {
+  color: #2193b4;
+  border-bottom: 1px solid #2193b4;
+}
+body strong {
+  font-weight: 700;
+}
 .menu-button {
   font-family: 'Open Sans';
   font-weight: 700;
@@ -76,47 +98,29 @@
 .btn-grey {
   background-color: #989898;
 }
-body {
-  color: #444;
-  font-family: 'Merriweather', Georgia, serif;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-body a {
-  font-weight: 700;
-  text-decoration: none;
-  color: #e96985;
-  border-bottom: 1px dotted #e96985;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-body a:hover {
-  color: #2193b4;
-  border-bottom: 1px dotted #2193b4;
-}
-body strong {
-  font-weight: 700;
-}
 .presentation .section-title,
 .cover-letter .section-title,
 .hire-me .section-title,
-.graphic-work .section-title {
+.graphic-projects .section-title,
+.curriculum .section-title,
+.playlist .section-title {
   font-weight: 800;
 }
-.presentation,
-.cover-letter {
-  font-size: 1.4em;
-}
-.hire-me .section-title,
-.graphic-work .section-title {
+.cover-letter .section-title,
+.graphic-projects .section-title,
+.curriculum .section-title,
+.playlist .section-title {
   font-size: 2em;
   text-align: center;
 }
-.presentation .description,
-.cover-letter .description {
-  font-size: 1em;
-  line-height: 1.8em;
+.cover-letter-subtitle,
+.experience-subtitle,
+.skills,
+.experience-info {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 .intro {
   background-color: #f8f6f3;
@@ -137,70 +141,79 @@ body strong {
   padding: 1em 0;
 }
 .menu-page .menu-list li {
-  padding-right: 1em;
+  padding-right: 0.6em;
 }
 .menu-page .menu-list li .contacts {
   color: #e96985;
 }
-.presentation {
-  padding-top: 1rem;
+.presentation .presentation-description {
+  font-size: 1em;
+  line-height: 1.8em;
 }
-.hire-me .subtitle {
-  font-family: 'Open Sans';
-  font-weight: 600;
+.cover-letter .cover-letter-subtitle {
   text-align: center;
-  text-transform: uppercase;
   border-bottom: 1px solid #e3e3e3;
   padding-bottom: 1.2em;
 }
-.hire-me .hire-me-description {
+.cover-letter .cover-letter-description {
   font-size: 0.9em;
   line-height: 1.8em;
 }
-.hire-me .hire-me-description li {
+.cover-letter .cover-letter-description li {
   padding-bottom: 0.4em;
 }
-.graphic-work {
+.graphic-projects {
   background-color: #f9f7f5;
 }
-.graphic-work .subtitle {
+.graphic-projects .project-subtitle {
   margin: 2em 0 0 0;
   font-size: 1.3em;
   font-weight: 800;
 }
-.graphic-work .project-description {
+.graphic-projects .project-description {
   margin: 0.6em 0 0 0;
   padding-right: 0.2em;
   font-size: 0.9em;
   line-height: 1.8em;
 }
-.graphic-work .img-container img {
+.graphic-projects .img-container img {
   margin: 0 auto;
   display: block;
   max-width: 100%;
 }
-.graphic-work .skills {
+.graphic-projects .skills {
   margin: 1.2em 0 0 0;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 0.8em;
-  font-weight: 600;
-  line-height: 1.4em;
-  text-transform: uppercase;
+  font-size: 0.7em;
+  line-height: 1.6em;
 }
-.graphic-work .skills .skills-label {
+.graphic-projects .skills .skills-label {
   color: #989898;
 }
-.graphic-work .skills .skills-label::after {
+.graphic-projects .skills .skills-label::after {
   content: '\2009';
 }
-.graphic-work .skills .skills-tags {
+.graphic-projects .skills .skills-tags {
   display: inline;
 }
-.graphic-work .skills .skills-tags li::after {
+.graphic-projects .skills .skills-tags li::after {
   content: ',\2009';
 }
-.graphic-work .skills .skills-tags li:last-of-type::after {
+.graphic-projects .skills .skills-tags li:last-of-type::after {
   content: '';
+}
+.curriculum {
+  font-size: 1em;
+}
+.curriculum .experience-info {
+  font-size: 0.75em;
+}
+.curriculum .experience-subtitle {
+  margin: 0;
+  font-size: 0.75em;
+}
+.curriculum .experience-description {
+  font-size: 0.9em;
+  line-height: 1.8em;
 }
 .playlist {
   background-color: #303030;
