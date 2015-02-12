@@ -52,10 +52,10 @@ body strong {
 .menu-button:active {
   box-shadow: inset 0px 0px 3px 2px rgba(68,68,68,0.2);
 }
-.contacts {
+.contact-me {
   color: #e96985;
 }
-.contacts:hover {
+.contact-me:hover {
   color: #fff;
   background-color: #e96985;
 }
