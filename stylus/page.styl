@@ -19,7 +19,10 @@
     font-stretch: normal;
 }
 
+// ------------------------------
 // Colors
+// ------------------------------
+
 $color_bg_intro = #F8F6F3
 $color_bg_playlist = #303030
 
@@ -45,7 +48,10 @@ transition()
 $rounded_corners = 4px
 $rounded_corners_small = 3px
 
+// ------------------------------
 // General Styles
+// ------------------------------
+
 body
     color $color_text
 
@@ -61,7 +67,7 @@ body
       color $color_links
       border-bottom 1px solid @color
 
-      transition(all 0.4s ease)
+      transition(all 0.3s ease)
 
       &:hover
         color $color_links_hover
@@ -70,32 +76,44 @@ body
     strong
       font-weight 700
 
+// ------------------------------
+// Buttons
+// ------------------------------
+
 // Menu Buttons
 .menu-button
   font-family 'Open Sans'
-  font-weight 700
   font-size 0.75em
+  font-weight 700
   text-transform uppercase
   letter-spacing 1px
 
   border-bottom none
-  padding 0.5em 0.8em
   border-radius $rounded_corners
+
+  padding 0.5em 0.8em
 
   color $color_grey
 
   transition(all 0.4s ease)
 
   &:hover
-    color $color_links
-    background-color $color_bg_intro
-
     border-bottom none
+
+    color $color_bg_intro
+    background-color $color_text_lighter
 
   &:active
     box-shadow inset 0px 0px 3px 2px rgba($color_text, 0.2)
 
-// Buttons
+.contacts
+  color $color_links
+
+  &:hover
+    color white
+    background-color $color_links
+
+// Button links
 .button
   display inline-block
 
@@ -132,6 +150,19 @@ body
   @media screen and (max-width: 640px)
     display block
 
+// Smaller button
+.btn-small
+  @extend .button
+  padding 0.6em 1em
+  border-radius $rounded_corners_small
+  font-size 0.7em
+
+// Block button
+.btn-block
+  @extend .button
+  display block
+
+// Color and style variants
 .btn-outline
   @extend .button
   background-color white
@@ -172,43 +203,78 @@ body
   &:active
     box-shadow inset 0px 1px 3px 0px darken($color_links, 30%)
 
-.btn-small
-  @extend .button
-  padding 0.6em 1em
-  border-radius $rounded_corners_small
-  font-size 0.7em
+// Non-text links
+.non-text-link
+  border-bottom none
 
-.btn-block
-  @extend .button
-  display block
+  &:hover
+    border-bottom none
 
+// ------------------------------
+// Typography Skins
+// ------------------------------
 
-.row
-  @media screen and (max-width: 640px)
-    padding 0 20px
-
-.case-study
-  img
-    max-width 100%
-
-
-// Typography
-
-// Section title, consistent across the page
+// Section title
 .section-title
-  margin 1em 0 0 0
-  font-weight 900
+  margin 1.8em 0 0 0
+
   font-size 2.6em
+  font-weight 900
   text-align center
 
-// Section subtitle, consistent across the page
+// Section subtitle
 .section-subtitle
   margin 1.6em 0 2em 0
+
   font-family 'Open Sans', sans-serif
-  text-transform uppercase
   font-size 0.9em
   font-weight 600
+  text-transform uppercase
   letter-spacing 1px
+
+.underlined
+  @extend .section-subtitle
+  margin 1.6em 0 0 0
+  padding-bottom 3em
+  border-bottom 1px solid $color_grey_extra_light
+
+// Descriptions
+.description
+  color $color_text_lighter
+
+// Description 2 columns
+.description-half
+  @extend .description
+  margin 1em 0 0 0
+
+  font-size 1em
+  line-height 1.688em
+
+// Description 3 columns
+.description-third
+  @extend .description
+  margin 1.2em 0
+
+  font-size 0.9em
+  line-height 1.8em
+
+// Subtitles
+.subtitle-strong
+  margin 1.2em 0 0.85em 0
+
+  font-family 'Open Sans', sans-serif
+  font-size 0.8em
+  font-weight 700
+  text-transform uppercase
+  letter-spacing 1px
+
+.subtitle-light
+  @extend .subtitle-strong
+  font-weight 600
+
+// ------------------------------
+// Page Styles
+// ------------------------------
 
 // Menu
 .menu-page
@@ -222,17 +288,8 @@ body
     background-color $color_text
     box-shadow 0px 1px 1px 0px rgba($color_shadow_menu, 0.4)
 
-  .menu-list
-
-    li
-      .contacts
-        color $color_links
-
-        &:hover
-          color $color_links_hover
-
-// Intro Banner
-.intro-banner
+// Top Banner
+.top-banner
   background-color $color_bg_intro
 
   .title
@@ -245,138 +302,90 @@ body
     .highlight
       color $color_links
 
-// Know me
+// Introduction
 .introduction
   margin 0 0 3.5rem 0
 
   .intro-line
+    margin-bottom 1em
     color $color_text
+
     font-weight 800
 
-  .introduction-description
-    color $color_text_lighter
-    margin 1em 0 0 0
+// Case Study
+.case-study
 
-    font-size 1em
-    line-height 1.688em
-
-// Hire me!
-.cover-letter
-
-  .cover-letter-container
-    border-top 1px solid $color_grey_extra_light
-    border-bottom 1px solid $color_grey_extra_light
-    padding 0.2em 0
-
-    .cover-letter-subtitle
-      font-family 'Open Sans', sans-serif
-      text-transform uppercase
-      font-weight 900
-      margin 1.2em 0 0.85em 0
-
-    .cover-letter-description
-      color $color_text_lighter
-      font-size 0.9em
-      line-height 1.8em
-
-      li
-        padding-bottom 0.4em
-
-// Why Bandcamp?
-.why-bandcamp
-
-  .why-bandcamp-description
-    font-size 1.188em
-    line-height 1.8em
+  img
+    max-width 100%
 
 // My Best Works
 .graphic-projects
 
-  .project-title
-    margin 1.2em 0 0 0
+  .project-widget
+    margin-bottom 1.2em
 
-    font-size 1.5em
-    font-weight 800
+    .description-third
+      margin-bottom 2.5em
 
-  .project-description
-    margin 1em 0 2.5em 0
-    padding-right 0.2em
+    .project-title
+      margin 1.2em 0 0 0
 
-    font-size 0.9em
-    line-height 1.75em
+      font-size 1.5em
+      font-weight 800
 
-    color $color_text_lighter
+    .img-container
+      margin 0 0 0.7em 0
 
-  .img-container
-    margin 0 0 0.7em 0
+      img
+        margin 0 auto
+        display block
+        max-width 100%
 
-    img
-      margin 0 auto
-      display block
-      max-width 100%
+    .skills
+      border-top 1px solid $color_grey_extra_light
+      padding-top 1em
+      margin 1.3em 0 0 0
 
-  .skills
-    border-top 1px solid $color_grey_extra_light
-    padding-top 1em
-    margin 1.3em 0 0 0
+      font-family 'Open Sans'
+      font-weight 600
+      letter-spacing 1px
+      text-transform uppercase
+      font-size 0.7em
+      line-height 1.6em
 
-    font-family 'Open Sans'
-    font-weight 600
-    letter-spacing 1px
-    text-transform uppercase
-    font-size 0.7em
-    line-height 1.6em
+      .skills-label
+        color $color_grey
 
-    .skills-label
-      color $color_grey
-
-      &::after
-        content '\2009'
-
-    .skills-tags
-      display inline
-
-      li
         &::after
-          content ',\2009'
+          content '\2009'
 
-        &:last-of-type::after
-          content ''
+      .skills-tags
+        display inline
 
-    .extra
-      color $color_links
+        li
+          &::after
+            content ',\2009'
+
+          &:last-of-type::after
+            content ''
+
+      .extra
+        color $color_links
 
 // Curriculum
 .curriculum
-  font-size 1em
 
-  .curriculum-subtitle
-    font-family 'Open Sans'
-    font-weight 600
-    letter-spacing 1px
-    text-transform uppercase
-    font-size 0.9em
+  .subtitle-strong
     text-align center
 
     border-bottom 1px solid $color_grey_extra_light
     padding-bottom 1.2em
 
   .experience-info
-    font-size 0.75em
+    font-size 0.85em
 
-  .experience-subtitle
-    font-family 'Open Sans'
-    font-weight 600
-    letter-spacing 1px
-    text-transform uppercase
-
+  .subtitle-light
     margin 0
-    font-size 0.75em
-
-  .experience-description
-    color $color_text_lighter
-    font-size 0.9em
-    line-height 1.8em
 
 // Playlist
 .playlist
