@@ -18,7 +18,7 @@ $(function() {
     $('[href="#' + item + '"]').closest('li').addClass('active');
   }
 
-  $('.menu-page').on('click', 'a', function(ev) {
+  $('.menu-list').on('click', 'a', function(ev) {
     ev.preventDefault();
     var item = $(ev.target).attr('href').replace('#', '');
     scrollToAnchor(item);
