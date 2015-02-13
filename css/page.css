@@ -307,7 +307,7 @@ label {
   margin: 9.5em 0 0 0;
   max-width: 100%;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 800px) {
   .top-banner img {
     margin: 1em auto 0 auto;
     max-width: 80%;
@@ -323,14 +323,14 @@ label {
 .top-banner .title .highlight {
   color: #e96985;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 800px) {
   .top-banner .title {
     margin: 0 0 1em 0;
     padding: 0 0.4em;
     font-size: 3em;
   }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 800px) {
   .top-banner {
     text-align: center;
   }
