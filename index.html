@@ -15,7 +15,7 @@
 
 <body class="wider">
 
-  <div class="row no-wrap menu-page">
+  <header class="row no-wrap menu-page only-desktop">
     <div class="unit nested menu-container">
       <div class="row justify">
         <ul class="unit u-75 menu-list">
@@ -24,22 +24,45 @@
           <li><a href="#together" class="menu-button">Me &amp; you</a></li>
           <li><a href="#mywork" class="menu-button">My works</a></li>
           <li><a href="#resume" class="menu-button">My resumé</a></li>
-          <!-- <li><a href="#playlist" class="menu-button">With Music</a></li> -->
           <li><a href="#contacts" class="menu-button contact-me">Contact me!</a></li>
         </ul>
         <div class="unit u-25">
           <a href="https://www.dropbox.com/s/16nk979rkr6xns9/Valentina_CV.pdf?dl=0" class="button btn-small" target="_blank">Download my CV</a>
-          <a href="" class="menu-button">top</a>
         </div>
       </div>
     </div>
-  </div>
+  </header>
+
+  <header class="row no-wrap no-gutters no-desktop mobile-menu-container">
+    <input id="mobile-menu-toggle" type="checkbox" role="button">
+
+      <div class="unit slide-mobile-menu">
+        <ul class="reset-list mobile-menu">
+          <li><a href="#contacts" class="menu-button contact-me">Contact me!</a></li>
+          <li><a href="https://www.dropbox.com/s/16nk979rkr6xns9/Valentina_CV.pdf?dl=0" class="menu-button download-cv" target="_blank">Download my CV</a></li>
+          <li><a href="#introduction" class="menu-button">Introduction</a></li>
+          <li><a href="#hireme" class="menu-button">Hire me!</a></li>
+          <li><a href="#together" class="menu-button">Me &amp; Bandcamp</a></li>
+          <li><a href="#mywork" class="menu-button">My best works</a></li>
+          <li><a href="#resume" class="menu-button">My resumé</a></li>
+        </ul>
+      </div>
+
+      <div class="unit menu-banner">
+        <p>
+          <label for="mobile-menu-toggle">
+            <span class="mobile-menu-button menu-button">Menu</span>
+          </label>
+      </p>
+      </div>
+
+  </header>
 
   <div class="row no-wrap top-banner">
     <div class="unit nested">
       <div class="row">
         <div class="unit u-33">
-          <img src="" alt="">
+          <img src="img/val.jpg" alt="">
         </div>
         <div class="unit u-66">
           <h1 class="title">Hello, I'm Valentina and I love <span class="highlight">Bandcamp</span></h1>
@@ -82,14 +105,14 @@
 
   </div>
 
-  <div  id="hireme" class="row center">
+  <div class="row center">
     <div class="unit">
-      <h2 class="section-title">Hire me!</h2>
+      <h2 id="hireme" class="section-title">Hire me!</h2>
       <h3 class="section-subtitle underlined">Why I am the perfect fit for Bandcamp</h3>
     </div>
   </div>
 
-  <div class="row split3">
+  <div class="row split3 one-column-phones hire-me">
 
     <div class="unit">
       <h5 class="subtitle-strong">I'm a skilled designer</h5>
@@ -108,13 +131,13 @@
     <div class="unit">
       <h5 class="subtitle-strong">I design in the browser</h5>
       <p class="description-third">
-        I move fast from Photoshop's static environment, to prototyping and testing my designs in the browser. I've been in charge of the design and the frontend implementation, alone, of two large web apps. And I survived. <strong>I consider HTML, CSS, Git, and the terminal as any other design tool</strong>.
+        I move fast from Photoshop's static environment, to prototyping and testing my designs in the browser. I've been in charge of designing and implementing the frontend, alone, of two large web apps. And I survived. <strong>I consider HTML, CSS, Git, and the terminal as any other design tool</strong>.
       </p>
     </div>
 
   </div>
 
-  <div id="title" class="row center">
+  <div class="row center">
     <div class="unit">
       <h2 id="together" class="section-title">We need each other</h2>
       <h3 class="section-subtitle underlined">A case study on Bandcamp web interface</h3>
@@ -123,9 +146,13 @@
 
   <div class="row case-study">
     <div class="unit u-33">
-      <h5 class="subtitle-strong">I'm a skilled designer</h5>
+      <h5 class="subtitle-strong">Re-designing the Discovery Page</h5>
       <p class="description-third">
-        After graduating in <strong>Visual Communication</strong>, I developed concepts, style guides, identities, offline and online layouts, illustrations, and icons for now ten years, specializing in printing and special finishings. I am a perfectionist. My best work will always be ahead of me.
+        Ok, my own description of my skills could obviously be biased. That's why I decided that a <strong>redesign exercise</strong> could be far more objective in describing what my design method consist of, and how I apply it.
+      </p>
+
+      <p class="description-third">
+        I've analyzed a small piece of your interface, making notes when I found points of friction on user interactions; I then <strong>rebuild the interface</strong>, using the same elements, but addressing user needs with different UX/UI patterns.
       </p>
       <a href="https://www.dropbox.com/s/o4tuf0h1emih02j/Bandcamp-CaseStudy.pdf?dl=0" class="button">
         download PDF
@@ -148,7 +175,7 @@
 
   <div class="row graphic-projects">
     <div class="unit nested">
-      <div class="row split3">
+      <div class="row split3 one-column-phones">
 
         <div class="unit project-widget">
           <a href="http://scintillaluz.github.io/waffle/" class="img-container" target="_blank">
@@ -295,382 +322,379 @@
   </div>
 
   <div class="row center">
+
     <div class="unit">
       <h2 id="resume" class="section-title">My Résumé</h2>
       <h3 class="section-subtitle">Or, how did I spend (most of) my time since today</h3>
     </div>
+
   </div>
 
   <div class="row curriculum">
-    <div class="unit nested">
 
-      <div class="row">
-        <div class="unit">
-          <h4 class="subtitle-strong">Work Experiences</h4>
-        </div>
-      </div>
+    <div class="unit">
+      <h4 class="cv-subtitle">Work Experiences</h4>
+    </div>
 
-      <div class="row experience">
+    <div class="unit nested work-experiences">
+
+      <div class="row cv-unit">
+
         <div class="unit u-25">
-          <ul class="reset-list experience-info">
-            <li class="what">Co-founder, Design &amp; Frontend</li>
-            <li class="when">2011/2014</li>
-            <li class="where">Urlist, Berlin–Germany</li>
+          <ul class="reset-list">
+            <li class="cv-role subtitle-strong">Co-founder, Design &amp; Frontend</li>
+            <li class="cv-info subtitle-light">2011/2014</li>
+            <li class="cv-info subtitle-light">Urlist, Berlin–Germany</li>
           </ul>
         </div>
-        <div class="unit u-75 nested">
+
+        <div class="unit u-75 nested cv-content">
           <div class="row">
+
             <div class="unit u-50">
-              <h5 class="subtitle-light">What I did</h5>
+              <h5 class="subtitle-strong">What I did</h5>
               <p class="description-third">
                 Layout design, illustration &amp; email design. Information Architecture, UX research, HTML implementation, CSS, styleguide documentation. I assisted my co-founder <a href="https://twitter.com/vrde" target="_blank">Vrde</a> on product strategy and user data analysis.
               </p>
             </div>
+
             <div class="unit u-50">
-              <h5 class="subtitle-light">What I learned</h5>
+              <h5 class="subtitle-strong">What I learned</h5>
               <p class="description-third">
                 Startup life is like a rollercoaster. Not because of the ups and downs, but because you're going fast and scream. I've never learnt so much so quickly. <strong>Main lesson: user needs come first. And second. And third.</strong>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row experience">
-          <div class="unit u-25">
-            <ul class="reset-list experience-info">
-              <li class="what">Sr Graphic Designer</li>
-              <li class="when">2010/2012</li>
-              <li class="where">ZERO Publishing, Milan–Italy</li>
-            </ul>
-          </div>
-          <div class="unit u-75 nested">
-            <div class="row">
-              <div class="unit u-50">
-                <h5 class="subtitle-light">What I did</h5>
-                <p class="description-third">
-                  Designing, prototyping, and supervising the printing process in case of special finishings for the covers of ZERO Magazine.
-                </div>
-                <div class="unit u-50">
-                  <h5 class="subtitle-light">What I learned</h5>
-                  <p class="description-third">
-                    Working in publishing means that when the press has started, there's no going back. I learned how to <strong>deliver fast prototypes</strong> and overcome last-minute difficulties to successfully <strong>meet tight deadlines</strong>.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row experience">
-              <div class="unit u-25">
-                <ul class="reset-list experience-info">
-                  <li class="what">Assistant Professor</li>
-                  <li class="when">2008/2009</li>
-                  <li class="where">Politecnico, Milan–Italy</li>
-                </ul>
-              </div>
-              <div class="unit u-75 nested">
-                <div class="row">
-                  <div class="unit u-50">
-                    <h5 class="subtitle-light">What I did</h5>
-                    <p class="description-third">
-                      Lectured for MA's Culture of Cinema class on <strong>visual language and narrative structures in movies &amp; TV series</strong>; tutored Movie Design students developing their final projects during their 2nd year of BA.
-                    </p>
-                  </div>
-                  <div class="unit u-50">
-                    <h5 class="subtitle-light">What I learned</h5>
-                    <p class="description-third">
-                      To balance my needs with the institution's ones. <strong>Teaching is understanding that each student has his or her own distinct motivation</strong>, and adjusting guidance to such individual needs.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row experience">
-                <div class="unit u-25">
-                  <ul class="reset-list experience-info">
-                    <li class="what">Sr Graphic Designer Freelance</li>
-                    <li class="when">2007/2011</li>
-                    <li class="where">Italy</li>
-                  </ul>
-                </div>
-                <div class="unit u-75 nested">
-                  <div class="row">
-                    <div class="unit u-50">
-                      <h5 class="subtitle-light">What I did</h5>
-                      <p class="description-third">
-                        Logos, icons, illustrations, identities, offline and online layouts, editorial concepts, motion graphic animations and packaging for individual clients and studios, for bigger and smaller brands.
-                      </p>
-                    </div>
-                    <div class="unit u-50">
-                      <h5 class="subtitle-light">What I learned</h5>
-                      <p class="description-third">
-                        I learned to be my own agent, choosing where to work and under which conditions; I refined my organisational skills, to face the freelancer's fragmented workflow. <strong>Communication creates the necessary bond of trust between designer and client</strong>.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="unit u-25">
-                  <ul class="reset-list experience-info">
-                    <li class="what">Jr Graphic Designer</li>
-                    <li class="when">2004/2007</li>
-                    <li class="where">Milan–Italy</li>
-                  </ul>
-                </div>
-                <div class="unit u-75 nested">
-                  <div class="row">
-                    <div class="unit u-50">
-                      <h5 class="subtitle-light">What I did</h5>
-                      <p class="description-third">
-                        Vector illustration &amp; layout design. Researched about non-linearity in communication, vision, readability and legibility; supported typeface design drawing new glyphs and manually optimising kerning and hinting.
-                      </p>
-                    </div>
-                    <div class="unit u-50">
-                      <h5 class="subtitle-light">What I learned</h5>
-                      <p class="description-third">
-                        <strong>Typography is king</strong>. The route for accessing information is built with words. Typography–both typefaces and typographical configuration–is the interface between us and the message a graphic artifact is conveying.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="unit">
-                  <h4 class="subtitle-strong">Studies</h4>
-                </div>
-              </div>
-
-              <div class="row experience">
-                <div class="unit u-25">
-                  <ul class="reset-list experience-info">
-                    <li class="what">Typography</li>
-                    <li class="when">2008/2009</li>
-                    <li class="where">CFP Bauer, Milan</li>
-                  </ul>
-                </div>
-                <div class="unit u-75 nested">
-                  <div class="row">
-                    <div class="unit u-50">
-                      <h5 class="subtitle-light">What I did</h5>
-                      <p class="description-third">
-                        History of letterforms, history of printing, ephemeral studies. I researched and wrote on cognitive psychology, reading processes and typography. I worked on layout &amp; cover design, typesetting and illustration for a variety of book design projects.
-                      </p>
-                    </div>
-                    <div class="unit u-50">
-                      <h5 class="subtitle-light">What I learned</h5>
-                      <p class="description-third">
-                        <strong>Every typographical choice has a direct impact on users</strong>. Typesetting and layout are simply given, in the eye of the reader; to achieve a 'crystal clear' page, grids and typefaces should be built on the text's main message.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row experience">
-              <div class="unit u-25">
-                <ul class="reset-list experience-info">
-                  <li class="what">Typography</li>
-                  <li class="when">2008/2009</li>
-                  <li class="where">CFP Bauer, Milan</li>
-                </ul>
-              </div>
-              <div class="unit u-75 nested">
-                <div class="row">
-                  <div class="unit u-50">
-                    <h5 class="subtitle-light">What I did</h5>
-                    <p class="description-third">
-                      History of Typography, calligraphy &amp; bookbinding basics, linocut, letterpress printing and traditional typesetting.
-                    </p>
-                  </div>
-                  <div class="unit u-50">
-                    <h5 class="subtitle-light">What I learned</h5>
-                    <p class="description-third">
-                      What a fascinating machine the Heidelberg Stella is. How knowing the where and why of letterforms and typography improves typsetting skills.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="unit u-25">
-                <ul class="reset-list experience-info">
-                  <li class="what">MA Graphic Design</li>
-                  <li class="when">2004/2007</li>
-                  <li class="where">Politecnico, Milan–Italy</li>
-                </ul>
-              </div>
-              <div class="unit u-75 nested">
-                <div class="row">
-                  <div class="unit u-50">
-                    <h5 class="subtitle-light">What I did</h5>
-                    <p class="description-third">
-                      Basic Design, Movie Design, Artificial Intelligence, copywriting and branding, we exercised our graphic skills on a variety of briefs, often collaborating with brands outside the University.
-                    </p>
-                  </div>
-                  <div class="unit u-50">
-                    <h5 class="subtitle-light">What I learned</h5>
-                    <p class="description-third">
-                      Functional design is good design. A designer must be quick in picking up a software or the technical knowdledge required for a job. Technical skills are just a mean to an end.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="unit u-25">
-                <ul class="reset-list experience-info">
-                  <li class="what">BA in Product Design</li>
-                  <li class="when">2001/2004</li>
-                  <li class="where">Politecnico, Milan–Italy</li>
-                </ul>
-              </div>
-              <div class="unit u-75 nested">
-                <div class="row">
-                  <div class="unit u-50">
-                    <h5 class="subtitle-light">What I did</h5>
-                    <p class="description-third">Benchmark research, concept design, 3D modelling and prototyping, marketing and branding planning for a variety of product design projects.</p>
-                  </div>
-                  <div class="unit u-50">
-                    <h5 class="subtitle-light">What I learned</h5>
-                    <p class="description-third">
-                      Design is a fine combination of creativity, marketing, visual communication, craftmanship. <strong>Working in a team was mandatory; I learned how to give and receive criticism, and negotiate decisions within a group</strong>.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="unit u-25">
-                <ul class="reset-list experience-info">
-                  <li class="what">Art High School</li>
-                  <li class="when">1995/2000</li>
-                  <li class="where">Varese–Italy</li>
-                </ul>
-              </div>
-              <div class="unit u-75 nested">
-                <div class="row">
-                  <div class="unit u-50">
-                    <h5 class="subtitle-light">What I did</h5>
-                    <p class="description-third">
-                      Plaster, clay, iron, paper, ink and watercolors. Basic training in sculpting, painting, architectural drawing. First self-directed projects and public lectures.
-                    </p>
-                  </div>
-                  <div class="unit u-50">
-                    <h5 class="subtitle-light">What I learned</h5>
-                    <p class="description-third">
-                      It all starts with research: that's why <strong>in art the process is as important as the final outcome</strong>; I realize that knowledge and vocabulary are crucial for communicating .
-                    </p>
-                  </div>
-                </div>
-              </div>
+              </p>
             </div>
 
           </div>
         </div>
 
-<!--   <div class="row no-wrap playlist center">
+      </div>
+
+      <div class="row cv-unit">
+
+        <div class="unit u-25">
+          <ul class="reset-list">
+            <li class="cv-role subtitle-strong">Sr Graphic Designer</li>
+            <li class="cv-info subtitle-light">2010/2012</li>
+            <li class="cv-info subtitle-light">ZERO Publishing, Milan–Italy</li>
+          </ul>
+        </div>
+
+        <div class="unit u-75 nested cv-content">
+          <div class="row">
+
+            <div class="unit u-50">
+              <h5 class="subtitle-strong">What I did</h5>
+              <p class="description-third">
+                Designing, prototyping, and supervising the printing process in case of special finishings for the covers of ZERO Magazine.
+              </p>
+            </div>
+
+            <div class="unit u-50">
+              <h5 class="subtitle-strong">What I learned</h5>
+              <p class="description-third">
+                Working in publishing means that when the press has started, there's no going back. I learned how to <strong>deliver fast prototypes</strong> and overcome last-minute difficulties to successfully <strong>meet tight deadlines</strong>.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row cv-unit">
+
+        <div class="unit u-25">
+          <ul class="reset-list">
+            <li class="cv-role subtitle-strong">Assistant Professor</li>
+            <li class="cv-info subtitle-light">2008/2009</li>
+            <li class="cv-info subtitle-light">Politecnico, Milan–Italy</li>
+          </ul>
+        </div>
+
+        <div class="unit u-75 nested cv-content">
+          <div class="row">
+
+            <div class="unit u-50">
+              <h5 class="subtitle-strong">What I did</h5>
+              <p class="description-third">
+                Lectured for MA's Culture of Cinema class on <strong>visual language and narrative structures in movies &amp; TV series</strong>; tutored Movie Design students developing their final projects during their 2nd year of BA.
+              </p>
+            </div>
+
+            <div class="unit u-50">
+              <h5 class="subtitle-strong">What I learned</h5>
+              <p class="description-third">
+                To balance my needs with the institution's ones. <strong>Teaching is understanding that each student has his or her own distinct motivation</strong>, and adjusting guidance to such individual needs.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row cv-unit">
+
+        <div class="unit u-25">
+          <ul class="reset-list">
+            <li class="cv-role subtitle-strong">Sr Graphic Designer Freelance</li>
+            <li class="cv-info subtitle-light">2007/2011</li>
+            <li class="cv-info subtitle-light">Italy</li>
+          </ul>
+        </div>
+
+        <div class="unit u-75 nested cv-content">
+          <div class="row">
+
+            <div class="unit u-50">
+              <h5 class="subtitle-strong">What I did</h5>
+              <p class="description-third">
+                Logos, icons, illustrations, identities, offline and online layouts, editorial concepts, motion graphic animations and packaging for individual clients and studios, for bigger and smaller brands.
+              </p>
+            </div>
+
+            <div class="unit u-50">
+              <h5 class="subtitle-strong">What I learned</h5>
+              <p class="description-third">
+                I learned to be my own agent, choosing where to work and under which conditions; I refined my organisational skills, to face the freelancer's fragmented workflow. <strong>Communication creates the necessary bond of trust between designer and client</strong>.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row cv-unit">
+
+        <div class="unit u-25">
+          <ul class="reset-list">
+            <li class="cv-role subtitle-strong">Jr Graphic Designer</li>
+            <li class="cv-info subtitle-light">2004/2007</li>
+            <li class="cv-info subtitle-light">Milan–Italy</li>
+          </ul>
+        </div>
+
+        <div class="unit u-75 nested cv-content">
+          <div class="row">
+
+            <div class="unit u-50">
+              <h5 class="subtitle-strong">What I did</h5>
+              <p class="description-third">
+                Vector illustration &amp; layout design. Researched about non-linearity in communication, vision, readability and legibility; supported typeface design drawing new glyphs and manually optimising kerning and hinting.
+              </p>
+            </div>
+
+            <div class="unit u-50">
+              <h5 class="subtitle-strong">What I learned</h5>
+              <p class="description-third">
+                <strong>Typography is king</strong>. The route for accessing information is built with words. Typography–both typefaces and typographical configuration–is the interface between us and the message a graphic artifact is conveying.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
     <div class="unit">
-      <h2 class="section-title">With Music</h2>
-      <h3 class="section-subtitle"></h3>
+      <h4 class="cv-subtitle">Studies</h4>
     </div>
-  </div> -->
 
-<!-- <div class="unit nested">
-    <div class="row split4 one-column-phones">
+    <div class="unit nested studies">
+      <div class="row cv-unit">
 
-      <div class="unit">
-        <div class="iframe-container">
-          <iframe style="border: 0; width: 270px; height: 412px;" src="https://bandcamp.com/EmbeddedPlayer/album=1939167276/size=large/bgcol=333333/linkcol=fe7eaf/tracklist=false/track=596235754/transparent=true/" seamless><a href="http://bigeyes.bandcamp.com/album/almost-famous">Almost Famous by BIG EYES</a></iframe>
+        <div class="unit u-25">
+          <ul class="reset-list">
+            <li class="cv-role subtitle-strong">Typography &amp; Book Design</li>
+            <li class="cv-info subtitle-light">2009/2010</li>
+            <li class="cv-info subtitle-light">University of Reading, UK</li>
+          </ul>
         </div>
+
+        <div class="unit u-75 nested cv-content">
+          <div class="row">
+
+            <div class="unit u-50">
+              <h5 class="subtitle-strong">What I did</h5>
+              <p class="description-third">
+                History of letterforms, history of printing, ephemeral studies. I researched and wrote on cognitive psychology, reading processes and typography. I worked on layout &amp; cover design, typesetting and illustration for a variety of book design projects.
+              </p>
+            </div>
+
+            <div class="unit u-50">
+              <h5 class="subtitle-strong">What I learned</h5>
+              <p class="description-third">
+                <strong>Every typographical choice has a direct impact on users</strong>. Typesetting and layout are simply given, in the eye of the reader; to achieve a 'crystal clear' page, grids and typefaces should be built on the text's main message.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
       </div>
-      <div class="unit">
-        <div class="iframe-container">
-          <iframe style="border: 0; width: 270px; height: 412px;" src="https://bandcamp.com/EmbeddedPlayer/album=1939167276/size=large/bgcol=333333/linkcol=fe7eaf/tracklist=false/track=596235754/transparent=true/" seamless><a href="http://bigeyes.bandcamp.com/album/almost-famous">Almost Famous by BIG EYES</a></iframe>
+
+      <div class="row cv-unit">
+
+        <div class="unit u-25">
+          <ul class="reset-list">
+            <li class="cv-role subtitle-strong">Typography</li>
+            <li class="cv-info subtitle-light">2008/2009</li>
+            <li class="cv-info subtitle-light">CFP Bauer, Milan</li>
+          </ul>
         </div>
+
+        <div class="unit u-75 nested cv-content">
+          <div class="row">
+
+            <div class="unit u-50">
+              <h5 class="subtitle-strong">What I did</h5>
+              <p class="description-third">
+                History of Typography, calligraphy &amp; bookbinding basics, linocut, letterpress printing and traditional typesetting.
+              </p>
+            </div>
+
+            <div class="unit u-50">
+              <h5 class="subtitle-strong">What I learned</h5>
+              <p class="description-third">
+                What a fascinating machine the Heidelberg Stella is. How knowing the where and why of letterforms and typography improves typsetting skills.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
       </div>
-      <div class="unit">
-        <div class="iframe-container">
-          <iframe style="border: 0; width: 270px; height: 412px;" src="https://bandcamp.com/EmbeddedPlayer/album=1939167276/size=large/bgcol=333333/linkcol=fe7eaf/tracklist=false/track=596235754/transparent=true/" seamless><a href="http://bigeyes.bandcamp.com/album/almost-famous">Almost Famous by BIG EYES</a></iframe>
+
+      <div class="row cv-unit">
+
+        <div class="unit u-25">
+          <ul class="reset-list">
+            <li class="cv-role subtitle-strong">MA Graphic Design</li>
+            <li class="cv-info subtitle-light">2004/2007</li>
+            <li class="cv-info subtitle-light">Politecnico, Milan–Italy</li>
+          </ul>
         </div>
+
+        <div class="unit u-75 nested cv-content">
+          <div class="row">
+
+            <div class="unit u-50">
+              <h5 class="subtitle-strong">What I did</h5>
+              <p class="description-third">
+                Basic Design, Movie Design, Artificial Intelligence, copywriting and branding, we exercised our graphic skills on a variety of briefs, often collaborating with brands outside the University.
+              </p>
+            </div>
+
+            <div class="unit u-50">
+              <h5 class="subtitle-strong">What I learned</h5>
+              <p class="description-third">
+                Functional design is good design. A designer must be quick in picking up a software or the technical knowdledge required for a job. Technical skills are just a mean to an end.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
       </div>
-      <div class="unit">
-        <div class="iframe-container">
-          <iframe style="border: 0; width: 270px; height: 412px;" src="https://bandcamp.com/EmbeddedPlayer/album=1939167276/size=large/bgcol=333333/linkcol=fe7eaf/tracklist=false/track=596235754/transparent=true/" seamless><a href="http://bigeyes.bandcamp.com/album/almost-famous">Almost Famous by BIG EYES</a></iframe>
+
+      <div class="row cv-unit">
+
+        <div class="unit u-25">
+          <ul class="reset-list">
+            <li class="cv-role subtitle-strong">BA in Product Design</li>
+            <li class="cv-info subtitle-light">2001/2004</li>
+            <li class="cv-info subtitle-light">Politecnico, Milan–Italy</li>
+          </ul>
         </div>
+
+        <div class="unit u-75 nested cv-content">
+          <div class="row">
+
+            <div class="unit u-50">
+              <h5 class="subtitle-strong">What I did</h5>
+              <p class="description-third">Benchmark research, concept design, 3D modelling and prototyping, marketing and branding planning for a variety of product design projects.</p>
+            </div>
+
+            <div class="unit u-50">
+              <h5 class="subtitle-strong">What I learned</h5>
+              <p class="description-third">
+                Design is a fine combination of creativity, marketing, visual communication, craftmanship. <strong>Working in a team was mandatory; I learned how to give and receive criticism, and negotiate decisions within a group</strong>.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
       </div>
-      <div class="unit">
-        <div class="iframe-container">
-          <iframe style="border: 0; width: 270px; height: 412px;" src="https://bandcamp.com/EmbeddedPlayer/album=1939167276/size=large/bgcol=333333/linkcol=fe7eaf/tracklist=false/track=596235754/transparent=true/" seamless><a href="http://bigeyes.bandcamp.com/album/almost-famous">Almost Famous by BIG EYES</a></iframe>
+
+      <div class="row cv-unit">
+
+        <div class="unit u-25">
+          <ul class="reset-list">
+            <li class="cv-role subtitle-strong">Art High School</li>
+            <li class="cv-info subtitle-light">1995/2000</li>
+            <li class="cv-info subtitle-light">Varese–Italy</li>
+          </ul>
         </div>
-      </div>
-      <div class="unit">
-        <div class="iframe-container">
-          <iframe style="border: 0; width: 270px; height: 412px;" src="https://bandcamp.com/EmbeddedPlayer/album=1939167276/size=large/bgcol=333333/linkcol=fe7eaf/tracklist=false/track=596235754/transparent=true/" seamless><a href="http://bigeyes.bandcamp.com/album/almost-famous">Almost Famous by BIG EYES</a></iframe>
+
+        <div class="unit u-75 nested cv-content">
+          <div class="row">
+
+            <div class="unit u-50">
+              <h5 class="subtitle-strong">What I did</h5>
+              <p class="description-third">
+                Plaster, clay, iron, paper, ink and watercolors. Basic training in sculpting, painting, architectural drawing. First self-directed projects and public lectures.
+              </p>
+            </div>
+
+            <div class="unit u-50">
+              <h5 class="subtitle-strong">What I learned</h5>
+              <p class="description-third">
+                It all starts with research: that's why <strong>in art the process is as important as the final outcome</strong>; I realize that knowledge and vocabulary are crucial for communicating .
+              </p>
+            </div>
+
+          </div>
         </div>
-      </div>
-      <div class="unit">
-        <div class="iframe-container">
-          <iframe style="border: 0; width: 270px; height: 412px;" src="https://bandcamp.com/EmbeddedPlayer/album=1939167276/size=large/bgcol=333333/linkcol=fe7eaf/tracklist=false/track=596235754/transparent=true/" seamless><a href="http://bigeyes.bandcamp.com/album/almost-famous">Almost Famous by BIG EYES</a></iframe>
-        </div>
-      </div>
-      <div class="unit">
-        <div class="iframe-container">
-          <iframe style="border: 0; width: 270px; height: 412px;" src="https://bandcamp.com/EmbeddedPlayer/album=1939167276/size=large/bgcol=333333/linkcol=fe7eaf/tracklist=false/track=596235754/transparent=true/" seamless><a href="http://bigeyes.bandcamp.com/album/almost-famous">Almost Famous by BIG EYES</a></iframe>
-        </div>
-      </div>
-      <div class="unit">
-        <div class="iframe-container">
-          <iframe style="border: 0; width: 270px; height: 412px;" src="https://bandcamp.com/EmbeddedPlayer/album=1939167276/size=large/bgcol=333333/linkcol=fe7eaf/tracklist=false/track=596235754/transparent=true/" seamless><a href="http://bigeyes.bandcamp.com/album/almost-famous">Almost Famous by BIG EYES</a></iframe>
-        </div>
-      </div>
-      <div class="unit">
-        <div class="iframe-container">
-          <iframe style="border: 0; width: 270px; height: 412px;" src="https://bandcamp.com/EmbeddedPlayer/album=1939167276/size=large/bgcol=333333/linkcol=fe7eaf/tracklist=false/track=596235754/transparent=true/" seamless><a href="http://bigeyes.bandcamp.com/album/almost-famous">Almost Famous by BIG EYES</a></iframe>
-        </div>
-      </div>
-      <div class="unit">
-        <div class="iframe-container">
-          <iframe style="border: 0; width: 270px; height: 412px;" src="https://bandcamp.com/EmbeddedPlayer/album=1939167276/size=large/bgcol=333333/linkcol=fe7eaf/tracklist=false/track=596235754/transparent=true/" seamless><a href="http://bigeyes.bandcamp.com/album/almost-famous">Almost Famous by BIG EYES</a></iframe>
-        </div>
-      </div>
-      <div class="unit">
-        <div class="iframe-container">
-          <iframe style="border: 0; width: 270px; height: 412px;" src="https://bandcamp.com/EmbeddedPlayer/album=1939167276/size=large/bgcol=333333/linkcol=fe7eaf/tracklist=false/track=596235754/transparent=true/" seamless><a href="http://bigeyes.bandcamp.com/album/almost-famous">Almost Famous by BIG EYES</a></iframe>
-        </div>
+
       </div>
 
     </div>
-  </div> -->
-
+  </div>
 
   <footer class="row no-wrap center">
+
     <div class="unit">
       <h4 id="contacts" class="section-title">Thanks!</h4>
+
       <ul class="menu-list contacts">
         <li class="subtitle-light">
           <a href="http://github.com/ScintillaLuz" target="_blank">Github</a>
         </li>
         <li class="subtitle-light">
-          <a href="http://twitter.com/scintillaluz" target="_blank">Twitter</a>
+          <a href="https://dribbble.com/ScintillaLuz" target="_blank">Dribbble</a>
+        </li>
+        <li class="subtitle-light">
+          <a href="http://bandcamp.com/scintillaluz" target="_blank">Bandcamp</a>
         </li>
         <li class="subtitle-light">
           <a href="mailto:poferopuffo@gmail.com">Email</a>
         </li>
       </ul>
-        <p>Berlin, 2015</p>
     </div>
+
     <div class="unit">
-      <img src="" alt="">
+      <img src="img/bye.jpg" alt="">
     </div>
+
     <div class="unit">
       <p class="licence subtitle-light">Want to use these images? Quote me then! <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p>
     </div>
+
   </footer>
 
 </body>
