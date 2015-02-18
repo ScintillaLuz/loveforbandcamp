@@ -304,8 +304,13 @@ label {
   background-color: #f8f6f3;
 }
 .top-banner img {
-  margin: 7.5em 0 0 0;
+  margin: 12em 0 0 0;
   max-width: 100%;
+}
+@media screen and (min-width: 1180px) {
+  .top-banner img {
+    margin: 7.5em 0 0 0;
+  }
 }
 @media screen and (max-width: 800px) {
   .top-banner img {
